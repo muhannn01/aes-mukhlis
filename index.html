@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>AES Encryption/Decryption</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+
+   <body>
+      <div class="container">
+         <h1>
+            Kriptografi <br />
+            Enkripsi / Dekripsi
+         </h1>
+
+         <div class="input-group">
+            <label for="plaintext">Plaintext:</label>
+            <input type="text" id="plaintext" />
+         </div>
+
+         <div class="input-group">
+            <label for="key">Key:</label>
+            <input type="text" id="key" />
+         </div>
+
+         <button class="btn" onclick="encryptAES()">Enkripsi</button>
+         <button class="btn" onclick="decryptAES()">Dekripsi</button>
+
+         <div class="input-group hasil">
+            <label for="ciphertext">Ciphertext:</label>
+            <textarea id="ciphertext" rows="5" readonly></textarea>
+            <!-- < type="text" id="ciphertext" readonly /> -->
+         </div>
+         <script src="script.js"></script>
+      </div>
+   </body>
+</html>
